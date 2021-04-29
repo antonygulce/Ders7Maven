@@ -16,5 +16,27 @@ public class MetinIslemleriTest {
 		assertEquals("MERHABA ARKADASLAR", sonuc);
 		
 	}
+	
+	@Test
+	public final void testBuyukHarfCevirNullKontrolu() {
+		
+		String ornek = "null";
+		
+		String sonuc = MetinIslemleri.buyukHarfCevir(ornek);
+		
+		assertEquals("null", sonuc);
+		
+	}
+	
+	@Test
+	public final void testBuyukHarfCevirBosString() {
+		
+		String ornek = "";
+		
+		String sonuc = MetinIslemleri.buyukHarfCevir(ornek);
+		
+		assertEquals("", sonuc);
+		
+	}
 
 }
