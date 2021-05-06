@@ -20,11 +20,11 @@ public class MetinIslemleriTest {
 	@Test
 	public final void testBuyukHarfCevirNullKontrolu() {
 		
-		String ornek = "null";
+		String ornek = null;
 		
 		String sonuc = MetinIslemleri.buyukHarfCevir(ornek);
 		
-		assertEquals("null", sonuc);
+		assertEquals(null, sonuc);
 		
 	}
 	
